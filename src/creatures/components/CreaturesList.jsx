@@ -6,7 +6,7 @@ const CreaturesList = ({ creatures }) => {
     return (
         <Row>
             {creatures.map((creature) => (
-                <CreaturesList key={creature.id} creature={creature} />
+                <CreaturesCard key={creature.id} creature={creature} />
             ))}
         </Row>
     );

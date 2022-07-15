@@ -13,7 +13,14 @@ const CreaturesCard = ({ creature }) => {
                 <BCard.Body>
                     <BCard.Img
                         variant={DEFAULT_IMAGE_POSITION}
-                        src={}/**//**/*/**/*/*/*/* */ */ */
+                        src={creature.image}
+                        loading="lazy"
+                        alt={creature.name}
+                    />
                 </BCard.Body>
             </Card>
         </Col>
+    );
+};
+
+export default CreaturesCard;
